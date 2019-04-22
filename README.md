@@ -1,4 +1,4 @@
 ## Welcome to the ++Swift Project Page
 
-![Image](/images/logo.png)
+![Image](/blob/masterimages/logo.png)
 
