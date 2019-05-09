@@ -1,5 +1,5 @@
 ## Welcome to the Swift++ Project Page
 
-![Image](/images/logo.png)
+![Image](/images/logo-cropped-small.png)
 
  
