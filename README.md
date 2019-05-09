@@ -1,4 +1,4 @@
-<img align="right" src="/images/logo-cropped-small.png">
+<img align="right" src="/images/logo-alpha-cropped-small.png">
 
 ## Welcome to the Swift++ Project Page
 
