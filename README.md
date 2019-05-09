@@ -1,10 +1,12 @@
+<img align="right" src="/images/logo-cropped-small.png">
+
 ## Welcome to the Swift++ Project Page
 
   Swift++ is a fork of Swift to develop a compiler that matches the performance envelope
   of Swift, but having the readability and elegance of Smalltalk. By basing this compiler
   on the Swift ecosystem, we'll take advantage of the popularity of the system as it's
   ported to platforms as diverse as desktop machines, smartphones and servers. Now that
-  Swift 5 has been released, and has standardized the Swift ABI stability and its process
+  Swift 5 has been released and has standardized the Swift ABI stability & its process
   for future enhancements, we can build on that groundwork to ensure Swift++ code will
   remain compatible with Apple's future plans for the language and its ecosystem.
 
