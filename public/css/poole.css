@@ -234,6 +234,11 @@ img {
   border-radius: 5px;
 }
 
+img + em {
+  text-align: center;
+  font-size: .8rem;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
