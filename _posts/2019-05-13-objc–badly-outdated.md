@@ -71,7 +71,8 @@ collection select: [block]. "Smalltalk's filter function"
 
 The same is true for defining structures and classes. Swift uses yet another format, while Smalltalk retains its message-sending paradigm.
 
-```Object subclass: #Stack
+```
+Object subclass: #Stack
    instanceVariableNames: 'anArray top'
    classVariableNames: ''
    poolDictionaries: ''.
