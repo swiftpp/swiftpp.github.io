@@ -79,7 +79,7 @@ Object subclass: #Stack
 Swift's syntax was built on picking obvious structures which are inconsistent in their usage.
 The language was designed with the easiest choice for the designers to make. It wasn't designed to be the easiest in which to write code. It also wasn't designed to be easy to implement. Swift's lexical analyzer and parser are horrible messes. As is its semantic analyzer, which uses a constraint solver to resolve the programmer's intent. Just trying to get it to figure out which are valid function calls and which aren't is difficult to debug.
 
-<img src="/images/debugging-constaint-solver.png">
+<img src="/images/debugging-constraint-solver.png">
 
 And because it has no clean, consistent mechanism for definitions of any kind, every feature added to the language looks like syntactic arsenic. Bells and whistles duct taped to Swift.
 
