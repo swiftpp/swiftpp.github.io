@@ -77,7 +77,7 @@ The language was designed with the easiest choice for the designers to make. It 
 
 And because it has no clean, consistent mechanism for definitions of any kind, every feature added to the language looks like syntactic arsenic. Bells and whistles duct taped to Swift.
 
-<img src="swift-millenniumfalcon-1200x900.jpg">
+<img src="/images/swift-millenniumfalcon-1200x900.jpg">
 
 Smalltalk's syntax conforms to a model which was refined to the simplest, most consistent metaphor: sending messages, in which the transmission mechanism is implied by the syntax. Consequently, there is no separate API to send a message, no other function call. A single abstraction for programmers to describe behavior and structure.
 
