@@ -53,24 +53,29 @@ Expressions have prefix and postfix operators, modifiers, and attributes.
 
 Smalltalk's syntax, which ObjC never truly followed, gave you a simple grammar which was consistent for the whole expression of code. Messages are:
 
+```
 unary-expression: receiver (unary-operator)*.
 binary-expression: unary-expression (binary-operator unary-expression)*.
 keyword-expression: binary-expression (keyword: binary-expression)*.
+```
 
 Similarly, the syntax for Swift's control structures use convoluted designs; again, inheriting Fortran's mess. Smalltalk's control structures are implemented as keywords sent as messages, conforming naturally to the existing syntax.
 
+```
 boolean-expression ifTrue: [block]. "Or ifFalse:"
 [block] whileTrue: [block]. "Or whileFalse:"
 numeric-expression timesRepeat: [block].
 collection do: [block]. "Smalltalk's map function"
 collection select: [block]. "Smalltalk's filter function"
+```
 
 The same is true for defining structures and classes. Swift uses yet another format, while Smalltalk retains its message-sending paradigm.
 
-Object subclass: #Stack
+```Object subclass: #Stack
    instanceVariableNames: 'anArray top'
    classVariableNames: ''
    poolDictionaries: ''.
+```
 
 Swift's syntax was built on picking obvious structures which are inconsistent in their usage.
 The language was designed with the easiest choice for the designers to make. It wasn't designed to be the easiest in which to write code. It also wasn't designed to be easy to implement. Swift's lexical analyzer and parser are horrible messes.
