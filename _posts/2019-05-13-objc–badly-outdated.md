@@ -47,26 +47,24 @@ If you think it's inconvenient to use infix notation when you write a function c
 
 Comma-delimited arguments anonymizes each argument. Context is lost for its data type. Context is lost for its purpose. Microsoft tried to mitigate this with Hungarian Notation, but it's still deficient. And the order in which arguments are to be written are also lost with this format. Infix notation gives you named, ordered parameters. Cleanly.
 
-Moreover, the Fortran-style of syntax Swift uses is inconsistent in its structure and symbols.
-
-Expressions have prefix and postfix operators, modifiers, and attributes.
+Moreover, the Fortran-style of syntax Swift uses is inconsistent in its structure and symbols. Expressions have prefix and postfix operators, modifiers, and attributes.
 
 Smalltalk's syntax, which ObjC never truly followed, gave you a simple grammar which was consistent for the whole expression of code. Messages are:
 
 ```
-unary-expression: receiver (unary-operator)*.
-binary-expression: unary-expression (binary-operator unary-expression)*.
+unary-expression: receiver (unary-selector)*.
+binary-expression: unary-expression (binary-selector unary-expression)*.
 keyword-expression: binary-expression (keyword: binary-expression)*.
 ```
 
 Similarly, the syntax for Swift's control structures use convoluted designs; again, inheriting Fortran's mess. Smalltalk's control structures are implemented as keywords sent as messages, conforming naturally to the existing syntax.
 
 ```
-boolean-expression ifTrue: [block]. "Or ifFalse:"
-[block] whileTrue: [block]. "Or whileFalse:"
+boolean-expression ifTrue: [block].           "Or ifFalse:"
+[block] whileTrue: [block].                   "Or whileFalse:"
 numeric-expression timesRepeat: [block].
-collection do: [block]. "Smalltalk's map function"
-collection select: [block]. "Smalltalk's filter function"
+collection do: [block].                       "Smalltalk's map function"
+collection select: [block].                   "Smalltalk's filter function"
 ```
 
 The same is true for defining structures and classes. Swift uses yet another format, while Smalltalk retains its message-sending paradigm.
@@ -79,7 +77,7 @@ Object subclass: #Stack
 ```
 
 Swift's syntax was built on picking obvious structures which are inconsistent in their usage.
-The language was designed with the easiest choice for the designers to make. It wasn't designed to be the easiest in which to write code. It also wasn't designed to be easy to implement. Swift's lexical analyzer and parser are horrible messes.
+The language was designed with the easiest choice for the designers to make. It wasn't designed to be the easiest in which to write code. It also wasn't designed to be easy to implement. Swift's lexical analyzer and parser are horrible messes. As is its semantic analyzer, which uses a constraint solver to resolve the programmer's intent. Just trying to get it to figure out which are valid function calls and which aren't is difficult to debug.
 
 And because it has no clean, consistent mechanism for definitions of any kind, every feature added to the language looks like syntactic arsenic. Bells and whistles duct taped to Swift.
 
@@ -88,14 +86,14 @@ And because it has no clean, consistent mechanism for definitions of any kind, e
 
 Smalltalk's syntax conforms to a model which was refined to the simplest, most consistent metaphor: sending messages, in which the transmission mechanism is implied by the syntax. Consequently, there is no separate API to send a message, no other function call. A single abstraction for programmers to describe behavior and structure.
 
-Swift doesn't have, as far as I've seen, a mechanism to add control-flow statements. But Smalltalk's singular reliance on messaging ensures a programmer can define the control mechanisms which are
+Swift doesn't have, as far as I've seen, a mechanism to add control-flow statements. But Smalltalk's singular reliance on messaging ensures a programmer can define the control mechanisms which are natural for its problem domain.
 
 Swift's clunky, 1950's era comma-delimited parms have higher cognitive load than Smalltalk's infix names. Commas are semiotic noise v less unnecessary tokens.
 
-You're talking about training wheels. I use a programing language in a professional capacity. Pro tools are higher level than consumer. Granted, there's some getting used to better tools. I'll allow a professional C/C++ programmer 1 Week to get used to reading infix method names vs the lifetime of a codebase for which he'll be more productive.
+To say Swift is easier to learn for those used to Fortran-style languages is to resort to training wheels. I use a programing language in a professional capacity. Pro tools are higher level than consumer. Granted, there's some getting used to better tools. I'll allow that a professional C/C++ programmer might need a week to get used to reading infix method names, I myself have had to do it. But that's a minor inconvenience compared to the lifetime of a codebase for which they'll be more productive.
 
 Swift's programming model is too dependent on past mental models. State vars v state objects. 
 
-Swift's reversion to Fortran's programming style abandons 3 important facets of the programming profession: 30 years of advances in the psychology of programming, using computers to offload mental and manual labor, and provide facilities for the definition of 
+Swift's reversion to Fortran's programming style abandons 3 important facets of the programming profession: 30 years of advances in the psychology of programming, using computers to offload mental and manual labor, and  facilities for the definition of programming expressions and tools that amplify our mental abilities.
 
-
+If Objective-C, which is a half-hearted copy of Smalltalk, is now badly outdated, Swift started out as a relic of a long dead era.
