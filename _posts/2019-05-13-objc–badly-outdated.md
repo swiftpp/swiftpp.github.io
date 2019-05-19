@@ -3,37 +3,22 @@ layout: post
 title: Objective-C–Badly Outdated?
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+A comment was made on Twitter that the programming language Objective-C was badly outdated, and Swift's syntax was easier to learn for programmers brought up on C-style programming languages. Let me suggest the contrary in a laboriously long-ass post.
 
-### Built on Poole
+### tl;dr
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
+Swift is inferior to Objective-C, and especially to its forebear, Smalltalk:
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
-
-### Lanyon features
-
-In addition to the features of Poole, Lanyon adds the following:
-
-* Toggleable sliding sidebar (built with only CSS) via **☰** link in top corner
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes
-
-[Head to the readme](https://github.com/poole/lanyon#readme) to learn more.
-
-### Browser support
-
-Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
+* Swift's syntax is an offshoot of FORTRAN. There's nothing modern about it.
+* Fortran's comma-delimited parameter passing, which Swift adopted, was selected without regard for cognitive impact.
+* Swift's syntax for expressions has multiple modes: prefix and postfix operators, modifiers, attributes, etc.
+* Swift's syntax for control-flow statements is inconsistent with that of invoking functions and methods.
+* Swift's syntax for defining data structures and elements is inconsistent with the rest of the language.
+* Swift's syntax makes it hard enough to read code with commas, but adding named parameters makes it worse.
+* Swift's use of comma-delimited parameters obscures the purpose of each parameter: its purpose and its type.
+* The ambiguous nature of Swift's parameter syntax makes it harder to recall their context when writing and reading, resulting in increased cognitive load and lost productivity.
 
 ### Don't Drink the Kool-aid
-
-A comment was made on Twitter that the programming language Objective-C was badly outdated, and Swift's syntax was easier to learn for programmers brought up on C-style programming languages. Let me suggest the contrary in a laboriously long-ass post.
 
 Swift's comma-delimited parameters are a holdover from Cold War era FORTRAN. Now, I don't know how much consideration @clattner_llvm put into picking comma delimiters over ObjC's infix notation, but John Backus, who led the development of Fortran later remarked, "…our entire attitude about language design had alwavs been a very casual one…". In contrast, the Smalltalk syntax which ObjC is based on incubated ~10 years at Xerox PARC in Alan Kay's Learning Research Group, which was focused on making the computer accessible as a problem-solving tool for children and non-programmer adults. Not to take anything away from Lattner's brain, but LRG was a decent-sized interdisciplinary team of professionals working on ways for non-technical folks to learn a system sufficiently well to develop their own tools to solve problems, and to do it in less than a day. Let's see how well the Smalltalk language they contrived stacks up against the Fortran Way.
 
