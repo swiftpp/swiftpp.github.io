@@ -11,12 +11,12 @@ Swift is inferior to Objective-C, and especially to its forebear, Smalltalk:
 
 * Swift's syntax is an offshoot of FORTRAN. There's nothing modern about it.
 * Fortran's comma-delimited parameter passing, which Swift adopted, was selected without regard for cognitive impact.
+* The ambiguous nature of Swift's parameter syntax makes it harder to recall their context when writing and reading, resulting in increased cognitive load and lost productivity.
+* Swift's syntax makes it hard enough to read code with commas, but adding named parameters makes it worse.
+* Swift's use of comma-delimited parameters obscures the purpose of each parameter: its purpose and its type.
 * Swift's syntax for expressions has multiple modes: prefix and postfix operators, modifiers, attributes, etc.
 * Swift's syntax for control-flow statements is inconsistent with that of invoking functions and methods.
 * Swift's syntax for defining data structures and elements is inconsistent with the rest of the language.
-* Swift's syntax makes it hard enough to read code with commas, but adding named parameters makes it worse.
-* Swift's use of comma-delimited parameters obscures the purpose of each parameter: its purpose and its type.
-* The ambiguous nature of Swift's parameter syntax makes it harder to recall their context when writing and reading, resulting in increased cognitive load and lost productivity.
 
 ### Don't Drink the Kool-aid
 
