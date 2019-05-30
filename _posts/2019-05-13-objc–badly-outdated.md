@@ -45,11 +45,11 @@ keyword-expression: binary-expression (keyword: binary-expression)*.
 Similarly, the syntax for Swift's control structures use convoluted designs; again, inheriting Fortran's mess. Smalltalk's control structures are implemented as keywords sent as messages, conforming naturally to the existing syntax.
 
 ```
-boolean-expression ifTrue: [block].           "Or ifFalse:"
-[block] whileTrue: [block].                   "Or whileFalse:"
+boolean-expression ifTrue: [block].      "Or ifFalse:"
+[block] whileTrue: [block].              "Or whileFalse:"
 numeric-expression timesRepeat: [block].
-collection do: [block].                       "Smalltalk's map function"
-collection select: [block].                   "Smalltalk's filter function"
+collection do: [block].                  "Map function"
+collection select: [block].              "Filter function"
 ```
 
 The same is true for defining structures and classes. Swift uses yet another format, while Smalltalk retains its message-sending paradigm.
