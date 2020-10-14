@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img align="right" src="/images/logo-alpha-cropped-small.png">ll
+<img align="right" src="/images/logo-alpha-cropped-small.png">
 The Swift++ Project is an effort to build a compiler which translates source code in
 a Smalltalk-based language and generates binaries for the Swift and Objective-C environments, the goal being
 to leverage the work of the Swift community to port the ecosystem to various platforms: desktop computers,
@@ -28,6 +28,6 @@ directory.
 * Set an envirnoment variable **LLVM_BUILD_DIR** to point to the swift-llvm build directory.
 (EG, export LLVM_BUILD_DIR="~/swift-source/build/Ninja-RelWithDebInfoAssert+swift-DebugAssert/llvm-macosx-x86_64")
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/swiftpp/swiftpp/issues) or [ask me on Twitter](https://twitter.com/swiftplusplis).
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/swiftpp/swiftpp/issues) or [ask me on Twitter](https://twitter.com/swiftplusplus).
 
 Thanks for reading!
